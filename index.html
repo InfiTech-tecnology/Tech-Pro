@@ -18,8 +18,53 @@
     />
   </head>
   <body>
-     <header></header>
-     <main></main>
-     <footer></footer>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <div class="imagen-header">
+          <picture>
+            <source 
+              sizes="1920w"
+              srcset="img/header.avif" 
+              type="image/avif" 
+            />
+            <source 
+              sizes="1920w"
+              srcset="/img/header.webp" 
+              type="image/webp" 
+            />
+            <img 
+              loading="lazy" 
+              decoding="async"
+              src="/img/header.png"
+              lazyalt="imagen"
+              width="1000"
+              height="600"  
+            />
+          </picture>
+        </div><!--.imagen-header-->
+        <div class="texto-header">
+          <p class="tagline-producto">Sonido Profesional</p>
+          <h1 class="nombre-producto degradado-verde">TechPro</h1>
+          <p class="descripcion-producto">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ratione modi dolore expedita! Vero voluptatem itaque perferendis illo libero dolor, assumenda fugit quam, ad quod blanditiis harum eum aliquam impedit!
+          </p>
+          <p class="precio-producto">Desde <span>$299</span></p>
+        </div><!--.texto-header-->
+      </div><!--.contenedor-header-->
+    </header><!--.header-->
+
+    <section class="contenedor">
+      <div class="iconos">
+        <div class="icono">
+          <img src="/img/icono-sonido.svg" alt="imagen icono">
+          <h3>Gran sonido</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reprehenderit ratione aut, natus obcaecati
+          </p>
+        </div>
+      </div>
+    </section>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
