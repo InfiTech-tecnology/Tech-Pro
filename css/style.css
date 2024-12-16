@@ -437,3 +437,86 @@ img {
       font-size: 4rem; 
     }
 }
+/* Newsletter */
+.newsletter{
+   background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0% ), 
+   url(../img/newsletter.jpg);
+   background-position: top center;
+   background-size: 100%, 70rem;
+   background-repeat: no-repeat;
+   margin-bottom: 4rem;
+}
+@media (min-width: 768px){
+    .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0% ), 
+        url(../img/newsletter.jpg);
+        background-position: center, -21rem 0rem;
+        background-size: 100%, 100rem;
+        padding: 10rem 0;
+    }
+
+}
+@media (min-width: 1600px){
+    .newsletter {
+        background-size: 100% 200rem;
+        background-position: center, 0% -30rem;
+    }
+
+}
+.contenido-newsletter{
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+    gap: var(--separacion);
+}
+@media (min-width: 768px){
+   .contenido-newsletter{
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+.texto-newsletter {
+  grid-row: 2 / 3;
+}
+@media (min-width: 768px){
+  .texto-newsletter{
+    grid-row: unset;
+    grid-column: 2 / 3;
+  }
+}
+.formulario input[type="text"] {
+   width: 100%;
+   padding: 1rem;
+   margin-bottom: 2rem;
+   border: 2px var(--grisClaro) solid;
+   border-radius: .2rem;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    background-color: var(--primario);
+    padding: 1rem;
+    color: var(--blanco);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    border: none;
+    transition-property: background-color font-weight;
+    transition-duration: .3s;
+    
+}
+.formulario input[type="submit"]:hover {
+    background-color: var(--azul-oscuro);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+/* FOOTER */
+.footer {
+    background-image: linear-gradient(to right, var(--azul-oscuro) 50%, var(--primario) 90%);
+    padding: 3rem 0;
+}
+.footer p{
+    text-align: center;
+    font-family: var(--fuenteTitulo);
+    color: var(--blanco);
+
+}
